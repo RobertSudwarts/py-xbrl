@@ -753,9 +753,10 @@ def _extract_non_fraction_value(fact_elem: ET.Element) -> float or None or str:
     try:
         scaled_value = float(fact_value) * pow(10, value_scale)
     except ValueError:
-        logger.warning("Caboom!!!! You might now be able to fix this!")
-        logger.warning(f"float({fact_value}) * pow(10, {value_scale})")
-        raise
+        if fact_value == "":
+            scaled_value = 0
+        else:
+            raise
 
     # Floating-point error mitigation
     if abs(scaled_value) > 1e6:

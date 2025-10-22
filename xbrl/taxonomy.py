@@ -9,6 +9,7 @@ from pathlib import Path
 
 import xml.etree.ElementTree as ET
 from functools import lru_cache
+from pathlib import Path
 from typing import List
 from urllib.parse import unquote
 

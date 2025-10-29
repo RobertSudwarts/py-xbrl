@@ -204,10 +204,12 @@ class TaxonomySchema:
 
 def parse_common_taxonomy(cache: HttpCache, namespace: str) -> TaxonomySchema or None:
     """
-    Parses a taxonomy by namespace. This is only possible for certain well known taxonomies, as we need the schema_url for
-    parsing it.
-    Some xbrl documents from the sec use namespaces without defining a schema url for those namespaces, so this function
-    might come in handy
+    Parses a taxonomy by namespace. This is only possible for certain
+    well-known taxonomies, as we need the schema_url for parsing it.
+
+    Some xbrl documents from the sec use namespaces without defining a
+    schema url for those namespaces, so this function might come in handy
+
     :param cache:
     :param namespace: namespace of the taxonomy
     :return:
@@ -215,6 +217,10 @@ def parse_common_taxonomy(cache: HttpCache, namespace: str) -> TaxonomySchema or
 
     if namespace in ns_schema_map:
         return parse_taxonomy_url(ns_schema_map[namespace], cache)
+
+    logger.warning(
+        f"from parse_common_taxonomy(): {namespace} not found in ns_schema_map"
+    )
     return None
 
 

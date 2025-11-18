@@ -430,6 +430,7 @@ ns_schema_map: dict = {
     'http://xbrl.sec.gov/dei-def/2022': 'https://xbrl.sec.gov/dei/2022/dei-2022_def.xsd',
     'http://xbrl.sec.gov/sic/2023': 'https://xbrl.sec.gov/sic/2023/sic-2023.xsd',
     'http://xbrl.sec.gov/stpr/2023': 'https://xbrl.sec.gov/stpr/2023/stpr-2023.xsd',
+    'http://xbrl.sec.gov/stpr/2025': 'https://xbrl.sec.gov/stpr/2025/stpr-2025.xsd',
     'http://fasb.org/us-types/2023': 'https://xbrl.fasb.org/us-gaap/2023/elts/us-types-2023.xsd',
     'http://fasb.org/us-roles/2023': 'https://xbrl.fasb.org/us-gaap/2023/elts/us-roles-2023.xsd',
     'http://fasb.org/srt-types/2023': 'https://xbrl.fasb.org/srt/2023/elts/srt-types-2023.xsd',

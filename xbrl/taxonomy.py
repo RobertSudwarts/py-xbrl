@@ -418,6 +418,7 @@ ns_schema_map: dict = {
     'http://xbrl.sec.gov/vip-n6/2023': 'https://xbrl.sec.gov/vip/2023/vip-n6-2023.xsd',
     'http://xbrl.sec.gov/country/2023': 'https://xbrl.sec.gov/country/2023/country-2023.xsd',
     'http://xbrl.sec.gov/currency/2023': 'https://xbrl.sec.gov/currency/2023/currency-2023.xsd',
+    'http://xbrl.sec.gov/currency/2025': 'https://xbrl.sec.gov/currency/2025/currency-2025.xsd',
     'http://xbrl.sec.gov/vip/2022q2': 'https://xbrl.sec.gov/vip/2022q2/vip-2022q2.xsd',
     'http://xbrl.sec.gov/vip-n3/2022q2': 'https://xbrl.sec.gov/vip/2022q2/vip-n3-2022q2.xsd',
     'http://xbrl.sec.gov/vip-n4/2022q2': 'https://xbrl.sec.gov/vip/2022q2/vip-n4-2022q2.xsd',
